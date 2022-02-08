@@ -36,7 +36,7 @@ const putBookId = async (req, res) => {
 const deleteBookId = async (req, res) => {
   const { id } = req.params;
   await Book.deleteOne({ _id: id }).then(
-    (book) => res.status(404).send(book),
+    (book) => res.status(200).send(book),
     (error) => res.status(404).send(error.message)
   );
 };
