@@ -1,7 +1,7 @@
 import { default as Book } from "../models/Book.model.js";
 const getBook = async (req, res) => {
   await Book.find().then(
-    (book) => res.status(302).send(book),
+    (book) => res.status(200).send(book),
     (error) => res.status(404).send(error.message)
   );
 };
@@ -9,7 +9,7 @@ const getBook = async (req, res) => {
 const getBookId = async (req, res) => {
   const { id } = req.params;
   await Book.find({ _id: id }).then(
-    (book) => res.status(302).send(book),
+    (book) => res.status(200).send(book),
     (error) => res.status(404).send(error.message)
   );
 };
