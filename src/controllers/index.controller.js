@@ -25,10 +25,8 @@ const putBookId = async (req, res) => {
   const { id } = req.params;
   const { title, isbn, pageCount, publishedDate, thumbnailUrl, shortDescription, status, authors, categories } = req.body;
 
-  await Book.findOneAndUpdate({ _id: id }, { title, isbn, pageCount, publishedDate, thumbnailUrl, shortDescription, status, authors, categories }).then(
-    () => {
-      Book.findOne({ _id: id }).then((book) => res.status(200).send(book));
-    },
+  await Book.findOneAndUpdate({ _id: id }, { title, isbn, pageCount, publishedDate, thumbnailUrl, shortDescription, status, authors, categories }, { new: true }).then(
+    (book) => res.status(200).send(book),
     (error) => res.status(404).send(error.message)
   );
 };
