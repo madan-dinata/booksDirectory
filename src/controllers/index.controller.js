@@ -1,4 +1,4 @@
-import { default as Book } from "../models/Book.model.js";
+import Book from "../models/Book.model.js";
 const getBook = async (req, res) => {
   await Book.find()
     .then((book) => res.status(200).send(book))
