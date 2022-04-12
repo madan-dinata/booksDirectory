@@ -11,3 +11,6 @@ A REST API Books Directory for NodeJS
 - [Cors](https://www.npmjs.com/package/cors)
 - [Morgan](https://www.npmjs.com/package/morgan)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [@hapi/joi](https://www.npmjs.com/package/@hapi/joi)
