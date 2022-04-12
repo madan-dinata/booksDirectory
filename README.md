@@ -13,4 +13,4 @@ A REST API Books Directory for NodeJS
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Bcryptjs](https://www.npmjs.com/package/bcryptjs)
 - [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- [@hapi/joi](https://www.npmjs.com/package/@hapi/joi)
+- [Joi](https://www.npmjs.com/package/joi)

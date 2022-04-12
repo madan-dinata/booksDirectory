@@ -1,5 +1,5 @@
 // validate
-import Joi from "@hapi/joi";
+import Joi from "joi";
 
 // registration validation
 const registerValidation = (data) => {
