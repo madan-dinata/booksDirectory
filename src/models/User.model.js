@@ -20,6 +20,12 @@ const userSchema = new Schema({
     min: 6,
     max: 1024,
   },
+  passwordConfirmation: {
+    type: String,
+    required: true,
+    min: 6,
+    max: 1024,
+  },
   date: {
     type: Date,
     default: Date.now,
