@@ -5,11 +5,11 @@ import { Router } from 'express';
 const router = Router();
 
 // router book
-router.get('/books', verify, getBook);
-router.get('/books/:id', verify, getBookId);
-router.post('/books', verify, postBook);
-router.put('/books/:id', verify, putBookId);
-router.delete('/books/:id', verify, deleteBookId);
+router.get('/books', getBook);
+router.get('/books/:id', getBookId);
+router.post('/books', postBook);
+router.put('/books/:id', putBookId);
+router.delete('/books/:id', deleteBookId);
 
 // router auth
 router.post('/register', register);
